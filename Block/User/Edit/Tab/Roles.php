@@ -33,8 +33,7 @@ class Roles extends MageRoles
         \Magento\Backend\Model\Auth\Session $authSession,
         \Magento\Framework\App\ResourceConnection $resource,
         array $data = []
-    )
-    {
+    ) {
         $this->_jsonEncoder = $jsonEncoder;
         $this->_userRolesFactory = $userRolesFactory;
         $this->_coreRegistry = $coreRegistry;
