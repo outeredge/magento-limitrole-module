@@ -1,7 +1,5 @@
 # magento-limitrole-module
-User Role Extra Module for Magento 2 by outer/edge
 
-This Module is to add additional filtering to the user creation from admin. This module will stops customers(non administrator) from being able to add users with <s>full access or</s> any access. 
+This module, designed for Magento 2, limits users who do not have **Full Access** rights from assigning a user to a role that does have Full access rights. 
 
-Currently this module will prevent users from adding new users with any role, if the current user don't have full privilege('Magento_Backend::all'=allow).
-
+This might be useful in an agency scenario where the customer wants to be able to assign users to roles but should not be able to assign roles that have full access when they do not either.
