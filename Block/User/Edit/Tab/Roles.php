@@ -77,7 +77,7 @@ class Roles extends MageRoles
 
     /**
      *
-     *  Collect all the rules that have full permission values in the "authorization_rule" table.
+     *  Collect all the rules that have full permission "allowed" values in the "authorization_rule" table.
      *
      * @return array
      */
@@ -88,7 +88,7 @@ class Roles extends MageRoles
         $connection = $this->_resource->getConnection();
         $select = $connection->select()
             ->from(['r' => $ruleTable])
-            ->where("`resource_id`='Magento_Backend::all'");
+            ->where("`resource_id`='Magento_Backend::all' AND `permission`='allow'");
         return $rulesWithAllArr = $connection->fetchAll($select);
     }
 }
