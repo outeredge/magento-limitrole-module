@@ -1,7 +1,7 @@
 {
     "name": "outeredge/magento-limitrole-module",
     "type": "magento2-module",
-    "description": "This Module is to add additional filtering to the user creation from admin: Module for Magento 2 by outer/edge",
+    "description": "Magento module to limit users from assigning themselves to full-access roles",
     "license": "MIT",
     "authors": [
         {
